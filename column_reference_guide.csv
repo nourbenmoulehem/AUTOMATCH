@@ -1,0 +1,23 @@
+Column,Type,Non-Null,Unique,Purpose
+car_age,int64,3577,27,Feature - Car age in years
+km_driven,int64,3577,770,Feature - Mileage (numerical)
+fuel_encoded,int32,3577,5,Feature - Fuel type (encoded)
+seller_type_encoded,int32,3577,3,Feature - Seller type (encoded)
+transmission_encoded,int64,3577,2,Feature - Transmission (encoded)
+owner_encoded,int64,3577,5,Feature - Owner (encoded)
+brand_encoded,int32,3577,29,Feature - Brand (encoded)
+selling_price,int64,3577,445,Target - Price (BO1)
+name,object,3577,1491,Reference - Car identification
+year,int64,3577,27,Reference - Manufacturing year
+brand,object,3577,29,Reference - Brand name (original)
+fuel,object,3577,5,Reference - Fuel type (original)
+seller_type,object,3577,3,Reference - Seller type (original)
+transmission,object,3577,2,Reference - Transmission type (original)
+owner,object,3577,5,Reference - Ownership history (original)
+price_category,category,3577,4,Segmentation - Price segment
+mileage_category,category,3577,4,Segmentation - Mileage segment
+age_category,category,3577,3,Segmentation - Age segment
+price_category_encoded,int64,3577,4,Feature - Price segment (encoded)
+mileage_category_encoded,int64,3577,4,Feature - Mileage segment (encoded)
+age_category_encoded,int64,3577,3,Feature - Age segment (encoded)
+log_price,float64,3577,445,Target - Log-transformed price
